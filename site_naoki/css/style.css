@@ -1,0 +1,16 @@
+:root {
+    --vemelho-escuro:#cc0000;   
+    --cinza-claro:#dcdcdc;
+    --cinza-escuro:#a9a9a9;
+    --bg-branco: #f5f5f5;
+
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-branco);
+    scroll-behavior: smooth;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: var(--bg-branco);
+}

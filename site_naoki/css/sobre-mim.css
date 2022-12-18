@@ -1,0 +1,97 @@
+.container-sobre-mim {
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 200px 0 200px;
+    letter-spacing: 1px;
+}
+
+.bloco-sobre-mim {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bloco-sobre-mim-row {
+    position: relative;
+}
+
+.sobre-mim-titulo {
+    color: var(--vemelho-escuro);
+    font-size: 40px;
+}
+
+.sobre-mim-titulo::before {
+    content: '';
+    width: 125px;
+    height: 2px;
+    background: var(--vemelho-escuro);
+    position: absolute;
+    top: 100%;
+}
+
+.sobre-mim-titulo::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: var(--vemelho-escuro);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+.sobre-mim-subtitulo {
+    font-size: 25px;
+    font-family: 'Noto Serif NP Hmong', serif;
+}
+
+.sobre-mim-subtitulo-1 {
+    padding-top: 20px;
+}
+
+.sobre-mim-subtitulo span {
+    font-family: 'Dancing Script', cursive;
+    color: var(--vemelho-escuro);
+    font-size: 27px;
+}
+
+.sobre-mim-texto {
+    padding: 17px 25px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.sobre-mim-foto {
+    background-image: url(../img/eu1.jpg);
+    width: 300px;
+    height: 420px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.sobre-mim-foto::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-top: 4px solid var(--vemelho-escuro);
+    border-left: 4px solid var(--vemelho-escuro);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+
+}
+.sobre-mim-foto::after {
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-right: 4px solid var(--vemelho-escuro);
+    border-bottom: 4px solid var(--vemelho-escuro);
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+}

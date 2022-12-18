@@ -1,0 +1,38 @@
+.container-menu {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background: black;
+    position: fixed;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 1px 4px 10px;
+    z-index: 1;
+}
+
+.bloco-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px 0 100px;
+    width: 100%;
+    background: black;
+    align-items: center;
+}
+
+.bloco-titulo {
+    color: white;
+    font-size: 23px;
+    font-family: 'Dancing Script', cursive;
+    transform: rotate(-7deg);
+}
+
+.lista-menu {
+    font-family: 'Oswald', sans-serif;    
+    color: white;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+}
