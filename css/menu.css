@@ -30,9 +30,22 @@
 
 .lista-menu {
     font-family: 'Oswald', sans-serif;    
-    color: white;
     width: 500px;
     display: flex;
     justify-content: space-around;
     font-size: 23px;
+}
+
+
+.lista-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista-item a:hover {
+    color: var(--vermelho-escuro);
+}
+
+.lista-item a:active {
+    color: white;
 }
