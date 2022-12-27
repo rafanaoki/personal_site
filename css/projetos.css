@@ -1,0 +1,41 @@
+.sessao-projetos {
+    display: flex;
+    justify-content: center;
+}
+
+.container-projetos {
+    display: flex;
+    height: 90vh;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.lista-projetos {
+    width: 100%;
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+}
+.lista-projetos-item {
+    width: 30%;
+    max-width: 500px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.lista-projetos-item-1 {
+    background-image: url(../img/apeperia.png);
+}
+
+.lista-projetos-item-2 {
+    background-image: url(../img/alurinha.png);
+}
+.lista-projetos-item-3 {
+    background-image: url(../img/barbearia_alura.png);
+}
+.lista-projetos-item-4 {
+    background-image: url(../img/fruta_fruto.png);
+}

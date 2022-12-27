@@ -1,11 +1,15 @@
+.sessao-intro {
+    box-shadow: 0px 0px 10px 2px black;
+    margin-bottom: 10px;
+}
 .container-intro {
     background-image: url(../img/paisagem1.jpg);
     display: flex;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh + 45px);
+    max-height: 1600px;
     width: 100%;
     align-items: center;
-    box-shadow: 3px 5px 10px;
 }
 
 .bloco-intro-titulo {

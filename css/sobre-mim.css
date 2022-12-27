@@ -1,5 +1,15 @@
+.sessao-sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .container-sobre-mim {
-    height: 90vh;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1600px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -9,9 +19,9 @@
 
 .bloco-sobre-mim {
     display: flex;
-    width: 650px;
     flex-direction: column;
     gap: 15px;
+    width: 50%;
 }
 
 .bloco-sobre-mim-row {
@@ -54,7 +64,7 @@
 
 .sobre-mim-subtitulo span {
     font-family: 'Dancing Script', cursive;
-    color: var(--vemelho-escuro);
+    color: var(--vermelho-escuro);
     font-size: 27px;
 }
 
@@ -67,8 +77,8 @@
 
 .sobre-mim-foto {
     background-image: url(../img/eu1.jpg);
-    width: 300px;
-    height: 420px;
+    width: 350px;
+    height: 400px;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -78,8 +88,8 @@
     content: '';
     width: 70px;
     height: 70px;
-    border-top: 4px solid var(--vemelho-escuro);
-    border-left: 4px solid var(--vemelho-escuro);
+    border-top: 4px solid var(--vermelho-escuro);
+    border-left: 4px solid var(--vermelho-escuro);
     position: absolute;
     left: -20px;
     top: -20px;
@@ -89,9 +99,35 @@
     content: '';
     width: 70px;
     height: 70px;
-    border-right: 4px solid var(--vemelho-escuro);
-    border-bottom: 4px solid var(--vemelho-escuro);
+    border-right: 4px solid var(--vermelho-escuro);
+    border-bottom: 4px solid var(--vermelho-escuro);
     position: absolute;
     right: -20px;
     bottom: -20px;
+}
+
+@media screen and (max-width: 1500px) {
+    .container-sobre-mim {
+        padding: 10% 10% 0 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-sobre-mim {
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .bloco-sobre-mim {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .bloco-sobre-mim {
+        width: 100%;
+    }   
 }

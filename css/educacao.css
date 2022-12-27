@@ -1,0 +1,75 @@
+/*===== Educacao =====*/
+.bloco-educacao {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 120px 0 0 0;
+}
+
+.educacao-titulo {
+    font-size: 27px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.educacao-titulo::before {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--vermelho-escuro);
+    position: absolute;
+    top: 34px;
+    left: 0;
+}
+
+.educacao-titulo::after {
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: var(--vermelho-escuro);
+    position: absolute;
+    top: 27px;
+    left: 0;
+}
+
+.bloco-educacao-item {
+    box-sizing: border-box;
+    padding: 20px 30px 20px 40px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #a9a9a9;
+    line-height: 20px;
+}
+
+.educacao-item {
+    text-align: justify;
+    position: relative;
+}
+
+.educacao-item::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: var(--vermelho-escuro);
+    left: -20px;
+}
+
+.educacao-item-titulo {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: 'Noto Serif NP Hmong', serif;
+}
+
+.educacao-texto {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 1170px) {
+    .bloco-educacao {
+        flex-wrap: wrap;
+    }
+    .educacao-item-titulo {
+        display: block;
+    }
+}
