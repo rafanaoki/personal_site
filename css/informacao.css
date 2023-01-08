@@ -59,6 +59,7 @@
 }
 
 .linha-progresso-total {
+    position: relative;
     margin-top: 10px;
     margin-bottom: 20px;
     background-color: var(--cinza-claro);
@@ -67,22 +68,42 @@
     height: 5px;
 }
 
+.botao-progresso {
+    position: absolute;
+    box-shadow: 0px 0px 5px 1px rgb(156, 156, 156);
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.botao-progresso-negativo {
+    left: -25px;
+    top: -9px;
+}
+.botao-progresso-positivo {
+    right: -25px;
+    top: -9px;
+}
+
+
 .linha-progresso {
     background-color: var(--vermelho-escuro);
     height: 5px;
+    transition: all 0.3s;
 }
 
 .linha-progresso-0 {
-    width: 61%;
+    width: 405px;
 }
 .linha-progresso-1 {
-    width: 14%;
+    width: 135px;
 }
 .linha-progresso-2 {
-    width: 78%;
+    width: 225px;
 }
 .linha-progresso-3 {
-    width: 17%;
+    width: 90px;
 }
 
 
