@@ -61,6 +61,7 @@
 .linha-progresso-total {
     position: relative;
     margin-top: 10px;
+    box-sizing: border-box;
     margin-bottom: 20px;
     background-color: var(--cinza-claro);
     border-radius: 40px;
@@ -88,22 +89,23 @@
 
 
 .linha-progresso {
+    box-sizing: border-box;
     background-color: var(--vermelho-escuro);
     height: 5px;
     transition: all 0.3s;
 }
 
 .linha-progresso-0 {
-    width: 405px;
+    width: 70%;
 }
 .linha-progresso-1 {
-    width: 135px;
+    width: 30%;
 }
 .linha-progresso-2 {
-    width: 225px;
+    width: 60%;
 }
 .linha-progresso-3 {
-    width: 90px;
+    width: 20%;
 }
 
 

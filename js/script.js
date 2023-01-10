@@ -1,24 +1,26 @@
 
-botao = document.querySelectorAll('.botao-progresso');
+const botao = document.querySelectorAll('.botao-progresso');
+const linhaProgresso = document.querySelectorAll('.linha-progresso');
+
 
 botao.forEach((element) => {
     element.addEventListener('click', (evento) => {
-        let linhaTotal = evento.target.parentNode;
-        let bloco = linhaTotal.parentNode
-        let textoPorcentagem = bloco.querySelector('.porcentagem-progresso');
-        let linhaProgresso = linhaTotal.querySelector('.linha-progresso');
-        let largura = parseInt(linhaProgresso.clientWidth);
+        const linhaTotal = evento.target.parentNode;
+        const bloco = linhaTotal.parentNode
+        const textoPorcentagem = bloco.querySelector('.porcentagem-progresso');
+        const linhaProgresso = linhaTotal.querySelector('.linha-progresso');
 
-        if (evento.target.dataset.controle === '+' && largura <= 405) {
-            largura += 45;
+        let numero = parseInt(textoPorcentagem.textContent.slice(0, -1));
+
+        if (evento.target.dataset.controle === '+' && numero < 100) {
+            linhaProgresso.style.width = numero + 10 + '%';
             textoPorcentagem.textContent = parseInt(textoPorcentagem.textContent) + 10 + '%';
 
-        } else if (evento.target.dataset.controle === '-' && largura > 0){
-            largura -= 45;
+        } else if (evento.target.dataset.controle === '-' && numero > 0){
+            linhaProgresso.style.width = numero - 10 + '%';
             textoPorcentagem.textContent = parseInt(textoPorcentagem.textContent) - 10 + '%';
         }
 
-        linhaProgresso.style.width = largura + 'px';
-
+        
     })
 });
